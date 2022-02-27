@@ -13,10 +13,14 @@
   =COUNTIFS(kickstarter!$F:$F,"=successful",kickstarter!$D:$D,"<1000",kickstarter!$R:$R,"=plays")
 By subbing out the "=successful" with cancelled and failed we could pull the count for those columns as well. Once that was complete looked at the total number of projects for each range of goals using the Sum() function. With that we are able to find the percentage Successful, failed, and canceled for each range of goals by dividing succeful, failed, and canceled by the total. We then used that to create the below chart to give louise a visual look at what we found using Pivot Charts.
 
+![OutcomesBasedonLaunchDate](OutcomesBasedonLaunchDate.png)
+
 ### Analysis of Outcomes Based on Goals
   We started this analysis by converting the starting date and end date data from Unix timestamps to day-month-year format that we can interpret. We accomplished that by using the below formula.
   =(((J2/60)/60)/24)+DATE(1970,1,1)
 From that point we created a pivot table as well as a chart by Filtering by parent category and years, making the Columns value to be "outcome," Rows value to be "Date Created Conversion," and Values to be "outcome.". That gave us the below chart that is able to be filtered by parent category as well as years to see how certain kickstarters did while starting at different months of the year.
+
+![OutcomesBasedonLaunchDate](OutcomesBasedonLaunchDate.png)
 
 ### Challenges and Difficulties Encountered
   The biggest problem we ecnountered during this analysis was errors in the initial COUNTIFS functions. We could not get a number to populate at first due to using multiple <>= signs. Once i simplified the code to using one of each we were able to get the correct totals to populate.
