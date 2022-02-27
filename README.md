@@ -34,7 +34,7 @@ By subbing out the "=successful" with cancelled and failed I could pull the coun
 
 Then I subbed "=successful" with cancelled and failed so I could pull the count for those columns again. Next we would sub in the next range of funding goals until the table was complete. Next I used the Sum() function to add up all of the successful, failed, and canceled kickstarters to get the total number of projects for each range of goals. With that column filled we were able to find the percentage of successful, failed, and canceled play kickstarters for each range of goals by dividing succeful, failed, and canceled by the total. We then used that to create the below chart to give louise a visual look at what we found using Pivot Charts.
 
-![Outcomes_VS_Goals](Outcomes_VS_Goals.png)
+![Outcomes_VS_Goals](https://github.com/SZapata4/Kickstarter-Analysis/blob/main/Resources/Outcomes_VS_Goals.png)
 
 ### Challenges and Difficulties Encountered
   The biggest problem I ecnountered during this analysis was an error in the second COUNTIFS function with ranges. I could not get a number to populate at first due to using multiple <>= signs. Once i simplified the code to using one of each for each for the two paramters I was able to get the correct totals to populate.
