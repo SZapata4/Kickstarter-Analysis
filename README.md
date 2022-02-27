@@ -17,7 +17,7 @@
   
 From that point I created a pivot table in a new sheet called Theater Outcomes by Launch Date. I made this pivot table by filtering by parent category and years, making the Columns value to be "outcome," Rows value to be "Date Created Conversion," and Values to be "outcome.". That table then allowed me to filter the data by the Theater Parent Category to show how many kickstartes were successful, failed, and canceled in each month. It also let me see how many kickstarters we started in total in each month. From that table I was able to also create the below chart that I can filter by parent category as well as years using the table. This allows us to visualize how successful Theater kickstarters are depending on what month of the year they were started.
 
-![OutcomesBasedonLaunchDate](OutcomesBasedonLaunchDate.png)
+![Theater-Outcomes-VS-Launch](https://github.com/SZapata4/Kickstarter-Analysis/blob/main/Resources/Theater-Outcomes-VS-Launch.png)
 
 ### Analysis of Outcomes Based on Goals
   I started the analysis of how play kickstarters are effected based on their funding goals by setting ranges of goals for the Kickstarters. Starting with less than a thousand then grouping them in $5,000 incremnts until we end with $50,000 or more for funding goals. From there I used the following COUNTIFS function to pull the number of succeful play kickstarters from the Kickstarter Data sheet for the less than a 1000 funding goal range. 
